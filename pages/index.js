@@ -28,7 +28,7 @@ export const getServerSideProps = async () => {
     const getTrainerDetails = async () => {
 
         try {
-            const response = await axios.get(`http://localhost:3000/demo.json`);
+            const response = await axios.get(`https://fitness-trainerapp.netlify.app/demo.json`);
 
             if (response.status == 200 && !!response.data) {
                 console.log(response.data.docs[0])
