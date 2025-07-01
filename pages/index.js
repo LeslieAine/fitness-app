@@ -12,6 +12,7 @@ import ContactPage from "../components/ContactPage"
 import Popup from "../components/Popup"
 import PhotoSwipe from "../components/PhotoSwipe"
 import NotFound from "../components/NotFound"
+// import trainerDetails from '../public/demo.json'
 
 
 export const getServerSideProps = async () => {
@@ -28,7 +29,7 @@ export const getServerSideProps = async () => {
     const getTrainerDetails = async () => {
 
         try {
-            const response = await axios.get(`https://fitness-trainerapp.netlify.app/demo.json`);
+            const response = await axios.get(`https://https://fitness-app-sage-xi.vercel.app/demo.json`);
 
             if (response.status == 200 && !!response.data) {
                 console.log(response.data.docs[0])
